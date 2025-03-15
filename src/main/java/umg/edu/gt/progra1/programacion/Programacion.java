@@ -4,6 +4,10 @@
 
 package umg.edu.gt.progra1.programacion;
 
+import java.util.Scanner;
+import umg.edu.gt.progra1.programacion.estructuraDeControl.IfElseExample;
+import umg.edu.gt.progra1.programacion.estructuraDeControl.SwitchCaseExample;
+
 /**
  *
  * @author wcord
@@ -11,7 +15,54 @@ package umg.edu.gt.progra1.programacion;
 public class Programacion {
 
     public static void main(String[] args) {
-        System.out.println("Hola mundo!!");
-        System.out.println("Bienvenidos al curso de Programacion 1");
+        System.out.println("Hola bienvenido a Progra 1");
+        testSwitchReducido();
     }
+    
+    
+    // IF ELSE
+    public static void testTriangulo() {
+        
+        IfElseExample ifElseExamp = new IfElseExample();        
+        ifElseExamp.validarTriangulo(5, 5, 5);        
+        ifElseExamp.validarTriangulo(6, 6, 4);        
+        ifElseExamp.validarTriangulo(3, 4, 5);
+        ifElseExamp.validarTriangulo(2, 2, 5);
+    }
+    
+    public static void testIfSimple() {
+        // Istanciar clase como objeto
+        // NombreClase nombreObjeto = new NombreClase();
+        IfElseExample ifElseExamp = new IfElseExample();
+        
+        Scanner scanner = new Scanner(System.in); 
+        System.out.println("Ingrese un numero: ");
+        int numero = scanner.nextInt();        
+        ifElseExamp.example(numero);
+        
+        System.out.println("Ingrese un numero: ");
+        numero = scanner.nextInt();        
+        ifElseExamp.example(numero);
+        
+        System.out.println("Ingrese un numero: ");
+        numero = scanner.nextInt();        
+        ifElseExamp.example(numero);
+        scanner.close();
+    }
+    
+    // Switch
+    public static void testSwitchSimple() {
+        
+        SwitchCaseExample switchExample = new SwitchCaseExample();
+        String diaEnLetras = switchExample.getDiaSemana(4);
+        System.out.println("El resultado es: " + diaEnLetras);
+    }
+    
+    public static void testSwitchReducido() {
+        SwitchCaseExample switchExample = new SwitchCaseExample();
+        boolean esLaboral = switchExample.getDiasNoLaborales("Sabado");
+        System.out.println("El dia es laboral: " + esLaboral);
+    }
+    
+    
 }

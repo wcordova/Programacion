@@ -66,5 +66,12 @@ public class SwitchCaseExample {
         
     } 
     
+    /*
+    Ejercicio 1:
+    El programa solicita dos números y una operación (+, -, *, / o %).
+    Luego, usa switch para realizar la operación y mostrar el resultado.
+
+    */
+    
     
 }

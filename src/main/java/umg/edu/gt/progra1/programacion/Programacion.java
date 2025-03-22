@@ -5,8 +5,9 @@
 package umg.edu.gt.progra1.programacion;
 
 import java.util.Scanner;
-import umg.edu.gt.progra1.programacion.estructuraDeControl.IfElseExample;
-import umg.edu.gt.progra1.programacion.estructuraDeControl.SwitchCaseExample;
+import umg.edu.gt.progra1.programacion.estructuradecontrol.example.IfElseExample;
+import umg.edu.gt.progra1.programacion.estructuradecontrol.example.LoopExample;
+import umg.edu.gt.progra1.programacion.estructuradecontrol.example.SwitchCaseExample;
 
 /**
  *
@@ -16,7 +17,7 @@ public class Programacion {
 
     public static void main(String[] args) {
         System.out.println("Hola bienvenido a Progra 1");
-        testSwitchReducido();
+        testLoop();
     }
     
     
@@ -64,5 +65,13 @@ public class Programacion {
         System.out.println("El dia es laboral: " + esLaboral);
     }
     
+    public static void testLoop() {
+        
+        LoopExample test = new LoopExample();
+        
+        test.breakExample();
+        test.continueExample();
+        
+    }
     
 }

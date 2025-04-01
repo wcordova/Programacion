@@ -5,6 +5,7 @@
 package umg.edu.gt.progra1.programacion;
 
 import java.util.Scanner;
+import umg.edu.gt.progra1.programacion.estructuraDeDatos.Vectores;
 import umg.edu.gt.progra1.programacion.estructuradecontrol.example.IfElseExample;
 import umg.edu.gt.progra1.programacion.estructuradecontrol.example.LoopExample;
 import umg.edu.gt.progra1.programacion.estructuradecontrol.example.SwitchCaseExample;
@@ -17,7 +18,7 @@ public class Programacion {
 
     public static void main(String[] args) {
         System.out.println("Hola bienvenido a Progra 1");
-        testLoop();
+        testVectores();
     }
     
     
@@ -72,6 +73,11 @@ public class Programacion {
         test.breakExample();
         test.continueExample();
         
+    }
+    
+    public static void testVectores() {
+        Vectores vectores = new Vectores();
+        vectores.matrizExample();
     }
     
 }

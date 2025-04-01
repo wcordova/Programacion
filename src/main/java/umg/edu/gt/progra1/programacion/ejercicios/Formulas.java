@@ -18,7 +18,7 @@ public class Formulas {
      *  Dos soluciones reales si el discrimiantes es = b2 - 4ac es positivo
      *  Sin soluciones reales si el discriminantre es menor a cero
      *  Validar los parametros recibidos
-     */
+     */    
     
     /**
      * Ejercicio: Numero palindrome

@@ -9,6 +9,7 @@ import umg.edu.gt.progra1.programacion.estructuraDeDatos.Vectores;
 import umg.edu.gt.progra1.programacion.estructuradecontrol.example.IfElseExample;
 import umg.edu.gt.progra1.programacion.estructuradecontrol.example.LoopExample;
 import umg.edu.gt.progra1.programacion.estructuradecontrol.example.SwitchCaseExample;
+import umg.edu.gt.progra1.programacion.impl.Inventario;
 
 /**
  *
@@ -18,8 +19,14 @@ public class Programacion {
 
     public static void main(String[] args) {
         System.out.println("Hola bienvenido a Progra 1");
-        testVectores();
+        testInventario();        
     }
+    
+    // Ejercicio Inventario
+    public static void testInventario() {
+        Inventario inventario = new Inventario();
+        inventario.inicializarInventario();
+    }   
     
     
     // IF ELSE

@@ -4,6 +4,8 @@
  */
 package umg.edu.gt.progra1.programacion.ejercicios;
 
+import umg.edu.gt.progra1.programacion.Programacion;
+
 /**
  *
  * @author wcord
